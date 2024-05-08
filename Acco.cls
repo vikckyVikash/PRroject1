@@ -11,13 +11,14 @@ public List<Account>alist;
         if(alist==null){
             alist=new List<Account>();
         }
+        else{
+            
+        }
         for(Account a:[select id,Rating from  account limit 1]){
             alist.add(a);
         }
         
-        if(true){
-           System.debug('add nnew '); 
-        }
+       
         return alist;
     }
 }
